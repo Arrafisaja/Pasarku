@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PasarKu - Belanja Segar Setiap Hari</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    
+    /* Header */
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    
+    .logo span {
+      color: #ffd54f;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+    
+    nav a:hover {
+      color: #ffd54f;
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1200') center/cover;
+      color: white;
+      text-align: center;
+      padding: 6rem 1rem;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .btn {
+      background-color: #ffd54f;
+      color: #2e7d32;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+    
+    .btn:hover {
+      background-color: #ffca28;
+    }
+    
+    /* Kategori */
+    .section {
+      padding: 4rem 5%;
+      text-align: center;
+    }
+    
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #2e7d32;
+    }
+    
+    .kategori {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .card img {
+      width: 60px;
+      margin-bottom: 1rem;
+    }
+    
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #2e7d32;
+    }
+    
+    /* Produk Unggulan */
+    .produk {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    
+    .produk-card {
+      background: white;
+      border-radius: 12px;
+      width: 250px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    
+    .produk-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    
+    .produk-info {
+      padding: 1rem;
+    }
+    
+    .produk-info h4 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .harga {
+      color: #d32f2f;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Pasar<span>Ku</span></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Kategori</a>
+      <a href="#">Promo</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Belanja Segar Langsung dari Pasar</h1>
+    <p>Sayur, buah, daging, dan kebutuhan harian dengan harga terbaik</p>
+    <a href="#" class="btn">Mulai Belanja</a>
+  </section>
+
+  <!-- Kategori -->
+  <section class="section">
+    <h2>Kategori Populer</h2>
+    <div class="kategori">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1514/1514948.png" alt="Sayur">
+        <h3>Sayuran</h3>
+        <p>Segar setiap hari</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/415/415682.png" alt="Buah">
+        <h3>Buah</h3>
+        <p>Manis & berkualitas</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/869/869664.png" alt="Daging">
+        <h3>Daging</h3>
+        <p>Pilihan terbaik</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="Sembako">
+        <h3>Sembako</h3>
+        <p>Stok selalu ada</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk Unggulan -->
+  <section class="section">
+    <h2>Produk Unggulan Hari Ini</h2>
+    <div class="produk">
+      <div class="produk-card">
+        <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=400" alt="Wortel">
+        <div class="produk-info">
+          <h4>Wortel Segar 1kg</h4>
+          <p class="harga">Rp 12.000</p>
+        </div>
+      </div>
+      <div class="produk-card">
+        <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=400" alt="Apel">
+        <div class="produk-info">
+          <h4>Apel Fuji 1kg</h4>
+          <p class="harga">Rp 35.000</p>
+        </div>
+      <div class="produk-card">
+        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400" alt="Ayam">
+        <div class="produk-info">
+          <h4>Daging Ayam 1kg</h4>
+          <p class="harga">Rp 38.000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 PasarKu. Semua kebutuhan pasar dalam satu genggaman.</p>
+  </footer>
+
+</body>
+</html>
